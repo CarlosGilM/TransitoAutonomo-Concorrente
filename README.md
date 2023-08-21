@@ -6,7 +6,7 @@ O desafio do Trânsito Autônomo envolve oito carros, cada um com um trajeto esp
 
  # Execução
 <img src="assets/execucaoTransitoAut.gif">
-Execução parcial utilizando a solução Variável de travamento.
+Execução parcial do programa.
 
 # Autores
 [@CarlosGilM](https://github.com/CarlosGilM)
