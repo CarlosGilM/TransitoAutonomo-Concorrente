@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.controllerGeral">
+   <children>
+      <ImageView fx:id="background" fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/background.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carroVermelhoIMG" fitHeight="19.0" fitWidth="39.0" layoutX="174.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/carroVermelho.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carroAmareloIMG" fitHeight="20.0" fitWidth="38.0" layoutX="617.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/carroAmarelo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carroVerdeIMG" fitHeight="20.0" fitWidth="38.0" layoutX="94.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/carroVerde.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carroCianoIMG" fitHeight="20.0" fitWidth="38.0" layoutX="94.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/carroCiano.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carroLaranjaIMG" fitHeight="38.0" fitWidth="20.0" layoutX="403.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/carroLaranja.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carroRoxoIMG" fitHeight="36.0" fitWidth="20.0" layoutX="141.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/carroRoxo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="carroCinzaIMG" fitHeight="20.0" fitWidth="38.0" layoutX="618.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/carroCinza.png" />
+         </image>
+      </ImageView>
+      <Slider fx:id="sliderVermelho" blockIncrement="3.0" layoutX="763.0" layoutY="126.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="11.0" prefWidth="103.0" rotate="180.0" value="5.0" />
+      <Slider fx:id="sliderAmarelo" blockIncrement="3.0" layoutX="763.0" layoutY="191.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="10.0" prefWidth="103.0" rotate="180.0" value="5.0" />
+      <Slider fx:id="sliderVerde" blockIncrement="3.0" layoutX="763.0" layoutY="255.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="103.0" rotate="180.0" value="5.0" />
+      <Slider fx:id="sliderCiano" blockIncrement="3.0" layoutX="763.0" layoutY="321.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="103.0" rotate="180.0" value="5.0" />
+      <Slider fx:id="sliderLaranja" blockIncrement="3.0" layoutX="763.0" layoutY="384.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="103.0" rotate="180.0" value="5.0" />
+      <Slider fx:id="sliderAzul" blockIncrement="3.0" layoutX="763.0" layoutY="448.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="103.0" rotate="180.0" value="5.0" />
+      <Slider fx:id="sliderRoxo" blockIncrement="3.0" layoutX="763.0" layoutY="514.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="103.0" rotate="180.0" value="5.0" />
+      <Slider fx:id="sliderCinza" blockIncrement="3.0" layoutX="764.0" layoutY="578.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="14.0" prefWidth="103.0" rotate="180.0" value="5.0" />
+      <Button fx:id="pausaVermelho" layoutX="763.0" layoutY="92.0" mnemonicParsing="false" onMouseClicked="#clickPausaVermelho" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #e4dbc1; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: white;" text="Pausar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="pausaAmarelo" layoutX="763.0" layoutY="155.0" mnemonicParsing="false" onMouseClicked="#clickPausaAmarelo" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #e4dbc1; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: white;" text="Pausar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="pausaVerde" layoutX="763.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#clickPausaVerde" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #e4dbc1; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: white;" text="Pausar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="pausaCiano" layoutX="763.0" layoutY="284.0" mnemonicParsing="false" onMouseClicked="#clickPausaCiano" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #e4dbc1; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: white;" text="Pausar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="pausaLaranja" layoutX="763.0" layoutY="348.0" mnemonicParsing="false" onMouseClicked="#clickPausaLaranja" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #e4dbc1; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: white;" text="Pausar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="pausaAzul" layoutX="763.0" layoutY="412.0" mnemonicParsing="false" onMouseClicked="#clickPausaAzul" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #e4dbc1; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: white;" text="Pausar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="pausaRoxo" layoutX="763.0" layoutY="478.0" mnemonicParsing="false" onMouseClicked="#clickPausaRoxo" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #e4dbc1; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: white;" text="Pausar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="pausaCinza" layoutX="763.0" layoutY="542.0" mnemonicParsing="false" onMouseClicked="#clickPausaCinza" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #e4dbc1; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: white;" text="Pausar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fx:id="carroAzulIMG" fitHeight="36.0" fitWidth="20.0" layoutX="272.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/carroAzul.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="botaoReiniciar" layoutX="729.0" layoutY="46.0" mnemonicParsing="false" onMouseClicked="#ClickbotaoReiniciar" prefHeight="27.0" prefWidth="139.0" style="-fx-background-color: #253544; -fx-background-radius: 50; -fx-border-radius: 50; -fx-border-color: white;" text="Reiniciar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
